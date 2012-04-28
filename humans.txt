@@ -1,0 +1,17 @@
+﻿/* heylysg.tk / Album de fotografias y felicitacion a la amiga: Heyly Soto Guerra... */
+
+/* TEAM */
+	Creator: William Palma Marroquin
+	Contact: marrocking[at]gmail.com
+	Twitter: @marrocking
+	From: Chiquimula, Guatemala
+
+/* THANKS */
+	Bextlan.com
+
+/* SITE */
+	Last update: 2012/04/28
+	Language: Español
+	Standars: HTML5, CSS3
+	Components: jQuery
+	Software: SublimeText2
