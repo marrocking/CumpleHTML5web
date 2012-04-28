@@ -14,6 +14,37 @@
 	<link rel="stylesheet" href="css/cssestilo.css"/> 
 	<!--cargar jquery de la web-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<!--Invocar A blaster album de fotos -->
+	<script type="text/javascript" src="js/turn.min.js"></script>
+
+	<!-- Ejecutar codigo java script de album -->
+	<script type="text/javascript">
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									console.log('Current view: ', $(this).turn('view'));
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+
+</script> <!-- Fin de codigo Javascript -->
+
 </head>
 <body>
 	<header>
@@ -22,11 +53,21 @@
 		</section>
 	</header>
 	<nav>
-		<img class="fade" alt="Gu&iacute;a pr&aacute;cticas Android, Redes y mas..." src="img/Pastel.gif"/>
-
+		<section id="pastel">
+			<img class="fade" alt="Feliz Cumplea&nacute;io" src="img/cake2.gif"/>
+		</section>
 	</nav>
 	<section id="album">
-		Aqui va el album con las fotos
+		<div id="magazine">
+			<div style="background-image:url(img/01.jpg);"></div>
+			<div style="background-image:url(img/02.jpg);"></div>
+			<div style="background-image:url(img/03.jpg);"></div>
+			<div style="background-image:url(img/04.jpg);"></div>
+			<div style="background-image:url(img/05.jpg);"></div>
+			<div style="background-image:url(img/06.jpg);"></div>
+			<div style="background-image:url(img/06.jpg);"></div>
+			<div style="background-image:url(img/01.jpg);"></div>
+		</div>
 	</section>
 	<footer> HTML5 - Tacua =)
 	</footer>

@@ -50,6 +50,8 @@ a:hover{
 	-o-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.5s ease-out;
+	font-size: 1.3em;
+	box-shadow: 0 1px rgba(255,255,255,.6) inset;
 }
 
 /*Para...*/
@@ -72,19 +74,84 @@ header, nav{
 h1{
 	font-size: 3em;
 }
- section{
+
+
+ section#album{
 	background: #DAA520;
-	margin: 0 auto;
-	max-width: 90%;
-	max-height: 95%;
-	text-align: center;
 	border-radius: 0.6em;
+	margin: 0 auto;
+	max-width: 75%;
+	max-height: 90%;
+	padding: 0.5em;
+	text-align: center;
+	/*sombras exterior*/
+	box-shadow: 0px 0px 30px #FFF;
+	-moz-box-shadow: 0px 0px 30px #FFF; 
+    -webkit-box-shadow: 0px 0px 40px #FFF;
+    -ms-box-shadow: 0px 0px 30px #FFF;
+    -o-box-shadow: 0px 0px 30px #FFF;
+}
+
+section a {
+	color: #DAA520;
+}
+
+/*Css del album de fotografias*/
+#magazine{
+	align:center;
+	max-width:100%;
+	height:450px;
+}
+
+#magazine .turn-page{
+	background-color:#FFF;
+	background-size:100% 100%;
+}
+
+.fade{
+    -ms-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	opacity: 1; /*1=100% */
+	filter:alpha(opacity=10); /*esto trabaja de 0 a 10*/
+}
+
+/*Clase fade - colocarle transicion out a logo*/
+.fade:hover{
+/*	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	opacity: 0.7; /*1=100%*/
+/*	filter:alpha(opacity=7); /*esto trabaja de 0 a 10*/
+	
+	/*Giro de imagen - Rotacion*/
+	-webkit-transform:rotate(360deg) scale(1,1);
+    -moz-transform:rotate(360deg) scale(2,2);
+    -o-transform:rotate(360deg) scale(2,2);
+    -ms-transform:rotate(360deg) scale(2,2);
+    transform:rotate(360deg) scale(2,2); 
 }
 
 footer {
 	margin: 0 auto;
 	font-family: Verdana, Helvetica;
 	font-size: 0.7em;
+	padding: 3em;
 	text-align: center;
 }
 
+@media (max-width: 600px){
+	
+	section#empresa{
+		font-size:1.5em;	
+	}
+
+	#magazine .turn-page{
+	background-color:#FFF;
+	background-size:70% 70%;
+	}
+}
