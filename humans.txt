@@ -1,4 +1,4 @@
-﻿/* heylysg.tk / Album de fotografias y felicitacion a la amiga: Heyly Soto Guerra... */
+﻿/* heyly.tk / Album de fotografias y felicitacion a la amiga: Heyly Soto Guerra... */
 
 /* TEAM */
 	Creator: William Palma Marroquin
