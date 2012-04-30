@@ -141,6 +141,12 @@ footer {
 	text-align: center;
 }
 
+@media (min-width:1100){
+	#magazine{
+	max-width:80%;
+	}
+}
+
 @media (max-width: 600px){
 	
 	section#empresa{
